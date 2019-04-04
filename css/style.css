@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans:600');
+
 body {
   /*  fullpage gradient*/
   height: 100vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(175, 170, 170, 1) 0%, rgba(96, 94, 94, 1) 98%);
+  line-height: 1.25;
 }
 
 section {
@@ -10,10 +13,19 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.shape {
+  border-style: solid;
+  border-color: transparent transparent gold transparent;
+  border-width: 0 25px 25px 25px;
 }
 
 h1 {
   font-size: 24px;
+  margin: 10px 0;
+  text-decoration: none;
 }
 
 footer {
@@ -21,4 +33,35 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+footer:nav a {
+  padding: 5px;
+}
+
+.button {
+  font-size: 5vmin;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: 45px;
+  line-height: 48px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10vmin;
+}
+
+@@media screen and (max-width: 650px) {
+  .button {
+    font-size: 30px;
+  }
 }
