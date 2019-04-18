@@ -23,7 +23,6 @@ section {
 }
 
 h1 {
-  font-size: 24px;
   margin: 10px 0;
   text-decoration: none;
 }
@@ -58,6 +57,10 @@ h1 {
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 10vmin;
+}
+
+small {
+  font-size: 12px;
 }
 
 @@media screen and (max-width: 650px) {
